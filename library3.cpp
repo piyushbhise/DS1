@@ -2,18 +2,18 @@
 using namespace std;
 int main()
 {
-   int book[0];
+   int book[10];
    int n = 0;
    int choice;
    int searchID;
 
    do
    {
-     cout<<"\n\n****** SMART LIB ******";
-     cout<<"\n1.Add Book";
-     cout<<"\n2.Display Books";
-     cout<<"\n3.Search Book";
-     cout<<"\n4.Exit";
+     cout<<"\n\n****** SMART LIBRARY ******";
+     cout<<"\n1.ADD BOOK";
+     cout<<"\n2.DISPLAY BOOKS";
+     cout<<"\n3.SEARCH BOOK";
+     cout<<"\n4.EXIT";
      cout<<"\nEnter your choice: ";
      cin>>choice;
 
