@@ -1,34 +1,29 @@
 #include<iostream>
 using namespace std;
+
 int main()
 {
- int queue[5];
- int front = 0;
- int rear = 0;
+    int queue[5];
+    int front = 0;
+    int rear = 0;
 
- //Add orders
- cout<<"ENTER 5 CUSTOMER ORDER ID'S:\n"<<endl;
- for(int i=0; i<5; i++)
- {
-  cin>>queue[i];
- }
+    cout << "ENTER 5 CUSTOMER ID : " << endl;
 
- cout<<"ENTER CUSTOMER ID: "<<endl;
- for(int i=0; i<5; i++)
- {
-  cin>>queue[rear];
-  rear++;
+    for ( int i = 0;i<5;i++)
+    {
+        cin >> queue[rear];
+        rear++;
 
+    }
 
- // Process orders
- cout<<"\nPROCESSING ORDERS:\n"<<endl;
+    cout << "THE ORDER NUMBER ARE :" << endl;
 
- while(front<rear)
- {
-  cout<<"CUSTEMER ADDED IN QUEUE: "<<queue[front]<<endl;
-
-  front++;
- }
-}
-return 0;
+        while (front < rear)
+        {
+           cout << "PROCESSING ORDER :" << queue[front] << endl;
+           front++;
+           
+        }
+    
+        return 0;
 }
